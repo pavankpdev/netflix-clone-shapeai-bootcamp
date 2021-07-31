@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+  z-index: 10;
+}
+
+.navbar__brand {
+  width: 100px;
+  height: 100%;
+}
+
+.brand__logo {
+  width: 100%;
+  height: 100%;
+}
+
+.language__drop__down {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.language__drop__down:focus {
+  outline: none;
+}
+
+.dropdown__container {
+  border: 1px solid white;
+  padding: 0.4rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.signin__button {
+  background-color: #dc030f;
+  border: 1px solid #dc030f;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.navbar__nav__items {
+  display: flex;
+  gap: 10px;
+}
+
+.hero__bg__image__container {
+  width: 100%;
+  height: 75vh;
+}
+
+.hero__bg__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__bg__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 75vh;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero__card {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.hero__subtitle,
+.hero__description {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero__bg__image__container {
+    height: 100vh;
+  }
+
+  .hero__bg__overlay {
+    height: 100vh;
+  }
+  .hero__card {
+    top: 50%;
+    left: 30%;
+    transform: translate(-20%, -20%);
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__subtitle,
+  .hero__description {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 2% 5%;
+  }
+
+  .navbar__brand {
+    width: 150px;
+  }
+
+  .signin__button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  .dropdown__container {
+    padding: 10px 5px;
+  }
+
+  .navbar__nav__items {
+    gap: 30px;
+  }
+
+  .hero__card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1254px) {
+}

@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta name="description" content="Hello this is my first web page!." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <img
+            src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+            alt="logo"
+            class="brand__logo"
+          />
+        </div>
+
+        <div class="navbar__nav__items">
+          <div class="nav__item">
+            <div class="dropdown__container">
+              <i class="fas fa-globe"></i>
+              <select
+                name="languages"
+                id="languagesSelect"
+                class="language__drop__down"
+              >
+                <option value="english" selected>English</option>
+                <option value="hindi">Hindi</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="nav__item">
+            <button class="signin__button">Sign in</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__bg__image__container">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+            alt="BG hero image"
+            class="hero__bg__image"
+          />
+        </div>
+        <div class="hero__bg__overlay"></div>
+
+        <div class="hero__card">
+          <h1 class="hero__title">
+            Unlimited Movies TV,<br />
+            Shows and More.
+          </h1>
+          <p class="hero__subtitle">Watch anywhere and cancel anytime.</p>
+          <p class="hero__description">
+            Ready to watch? Enter your email to create or restart your
+            membership .
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
