@@ -164,6 +164,95 @@ body {
   letter-spacing: 1px;
 }
 
+.feature {
+  border-top: 8px solid #222;
+  padding: 2rem 1rem;
+}
+
+.feature__details {
+  text-align: center;
+}
+
+.feature__title {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.feature__sub__title {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.feature__image__container {
+  width: 100%;
+  position: relative;
+}
+.feature__image {
+  width: 100%;
+}
+
+.feature__backgroud__video__container {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 13%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  z-index: -2;
+}
+
+.feature__backgroud__video {
+  width: 100%;
+}
+
+.feature__2__poster__container {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 15em;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 50px;
+  padding: 0.25rem 0.6rem;
+}
+
+.poster__container {
+  width: 30%;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+}
+.poster__details {
+  width: 50%;
+}
+.poster__details > h4 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.poster__details > h6 {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(63, 63, 246);
+}
+
+.download__gif__container {
+  width: 20%;
+  height: 100%;
+}
+.gif {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 768px) {
   .hero__bg__image__container {
     height: 100vh;
@@ -183,6 +272,18 @@ body {
   .hero__subtitle,
   .hero__description {
     font-size: 1.3rem;
+  }
+
+  .feature {
+    padding: 4rem;
+  }
+
+  .feature__title {
+    font-size: 35px;
+  }
+
+  .feature__sub__title {
+    font-size: 20px;
   }
 }
 
@@ -223,6 +324,34 @@ body {
   }
   .primary__button {
     height: 50px;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .feature__details {
+    text-align: left;
+    padding: 0 6rem;
+  }
+
+  .feature__title {
+    font-size: 50px;
+  }
+
+  .feature__sub__title {
+    font-size: 25px;
+  }
+
+  .feature__image__container {
+    max-width: 500px;
+  }
+
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
   }
 }
 
